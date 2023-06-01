@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Modern Bible</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/jezus.png"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Great+Vibes&family=Quicksand:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="assets/javascript/popup.js"></script>
+    <script type="module" src="assets/javascript/input.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <header></header>
+    <main>
+        <form action="#" novalidate class="mainform">
+            <h1>THE MODERN BIBLE</h1>
+            <div class="input">
+                <label for="verse">
+                    <img src="assets/images/jezus.png" alt="Jezus who says: 'Search a random bible verse today' ">
+                </label>
+                <input type="text" name="verse" id="verse" required autofocus>
+            </div>
+
+            <button type="button" class="advanced_option">Advanced options</button>
+
+            <div>
+                <button class="random" type="button">RANDOM</button>
+                <button class="search" type="submit">SEARCH</button>
+            </div>
+        </form>
+
+        <section>
+            <form action="#" novalidate class="overlayform closed">
+                <h2>ADVANCED OPTIONS</h2>
+                <div class="input cbBox">
+                    <label for="book">
+                        <span class="field-label">Set a bible book:</span>
+                    </label>
+                    <select name="book" id="book" tabindex="0">
+                        <option value=""></option>
+                        <option value="gn">Genesis</option>
+                        <option value="ex">Exodus</option>
+                        <option value="lv">Leviticus</option>
+                        <option value="nm">Numbers</option>
+                        <option value="dt">Deuteronomy</option>
+                        <option value="js">Joshua</option>
+                        <option value="jud">Judges</option>
+                        <option value="rt">Ruth</option>
+                        <option value="1sm">1 Samuel</option>
+                        <option value="2sm">2 Samuel</option>
+                        <option value="1kgs">1 Kings</option>
+                        <option value="2kgs">2 Kings</option>
+                        <option value="1ch">1 Chronicles</option>
+                        <option value="2ch">2 Chronicles</option>
+                        <option value="ezr">Ezra</option>
+                        <option value="ne">Nehemiah</option>
+                        <option value="et">Esther</option>
+                        <option value="job">Job</option>
+                        <option value="ps">Psalms</option>
+                        <option value="prv">Proverbs</option>
+                        <option value="ec">Ecclesiastes</option>
+                        <option value="so">Song of Solomon</option>
+                        <option value="is">Isaiah</option>
+                        <option value="jr">Jeremiah</option>
+                        <option value="lm">Lamentations</option>
+                        <option value="ez">Ezekiel</option>
+                        <option value="dn">Daniel</option>
+                        <option value="ho">Hosea</option>
+                        <option value="jl">Joel</option>
+                        <option value="am">Amos</option>
+                        <option value="ob">Obadiah</option>
+                        <option value="jn">Jonah</option>
+                        <option value="mi">Micah</option>
+                        <option value="na">Nahum</option>
+                        <option value="hk">Habakkuk</option>
+                        <option value="zp">Zephaniah</option>
+                        <option value="hg">Haggai</option>
+                        <option value="zc">Zechariah</option>
+                        <option value="ml">Malachi</option>
+                        <option value="mt">Matthew</option>
+                        <option value="mk">Mark</option>
+                        <option value="lk">Luke</option>
+                        <option value="jo">John</option>
+                        <option value="act">Acts</option>
+                        <option value="rm">Romans</option>
+                        <option value="1co">1 Corinthians</option>
+                        <option value="2co">2 Corinthians</option>
+                        <option value="gl">Galatians</option>
+                        <option value="eph">Ephesians</option>
+                        <option value="ph">Philippians</option>
+                        <option value="cl">Colossians</option>
+                        <option value="1ts">1 Thessalonians</option>
+                        <option value="2ts">2 Thessalonians</option>
+                        <option value="1tm">1 Timothy</option>
+                        <option value="2tm">2 Timothy</option>
+                        <option value="tt">Titus</option>
+                        <option value="phm">Philemon</option>
+                        <option value="hb">Hebrews</option>
+                        <option value="jm">James</option>
+                        <option value="1pe">1 Peter</option>
+                        <option value="2pe">2 Peter</option>
+                        <option value="1jo">1 John</option>
+                        <option value="2jo">2 John</option>
+                        <option value="3jo">3 John</option>
+                        <option value="jd">Jude</option>
+                        <option value="re">Revelation</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="tag">
+                        <span class="field-label">Set an image tag:</span>
+                    </label>
+                    <input type="text" name="tag" id="tag" tabindex="0">
+                </div>
+                <button class="save" type="submit" tabindex="0">SAVE</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="../" class="active">
+                    <p>HOME</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-house"
+                         viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd"
+                              d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                    </svg>
+                </a>
+
+            </li>
+            <li>
+                <a href="../review/">
+                    <p>RATE</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-award"
+                         viewBox="0 0 16 16">
+                        <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="../info/">
+                    <p>INFO</p>
+                    <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 416.979 416.979" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <path
+                                    d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85 c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786 c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576 c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765 c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
