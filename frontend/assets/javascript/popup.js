@@ -2,6 +2,7 @@ import {FormValidator} from "./form_validator.js";
 
 const a_options_btn = document.querySelector(".advanced_option");
 const form = document.querySelector('.overlayform');
+const book = document.querySelector('#book');
 if (!form)
     stop();
 
@@ -46,6 +47,7 @@ a_options_btn.addEventListener('click', function () {
     console.log('a options');
     form.classList.add("open");
     form.classList.remove("closed");
+    book.focus();
 })
 form.addEventListener('submit', function (event) {
     event.preventDefault()
@@ -60,6 +62,7 @@ form.addEventListener('submit', function (event) {
     console.log(sessionStorage.getItem("tag"))
     form.classList.remove("open");
     form.classList.add("closed");
+    a_options_btn.focus();
     this.reset()
 })
 
